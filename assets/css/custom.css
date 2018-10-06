@@ -1,0 +1,1111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,700');
+.spacer{
+  display: block;
+  margin-bottom: 755px;
+}
+/*-----tweaks-----*/
+body{
+  font-family: raleway;
+  -webkit-font-smoothing:antialiased;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #20465f;
+    border: 2px solid #ffffff;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #323232;
+    border: 1px solid #A7A7A7;
+    width: 5px;
+}
+
+/*-----typography-----*/
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: raleway;
+    margin: 0;
+}
+
+#sb{
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  width: 210px;
+}
+
+#sb .open .sidebar_container{
+  position: fixed;
+  background: #171515;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+  width: 210px;
+  top: 0;
+  left: 0;
+  bottom:0;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+#sb .closed .sidebar_container{
+  position: fixed;
+  background: #171515;
+  height: 700px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+  width: 210px;
+  top: 0;
+  bottom:0;
+  left: -210px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+#sb .card{
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  background:#111;
+  text-align: center;
+}
+
+#sb .card .circle{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin-top: 40px;
+  background:url('../img/avatar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:10px;
+  display:inline-block;
+}
+
+
+#sb .toggle {
+  position:relative;
+  width: 70px;
+  height: 20px;
+  border: 0;
+  top: 70px;
+  left: 180px;
+  border-radius: 10px;
+  background: #00BCD4;
+  outline: 0;
+}
+
+#sb  ul{
+  position: relative;
+  padding:0;
+  list-style: none;
+  background: #171515;
+}
+
+#sb ul a:hover,#sb ul a:hover{
+    text-decoration: none;
+}
+#sb  ul li{
+  position: relative;
+  padding-left: 35px;
+  padding-top: 6px;
+  padding-bottom:6px;
+  font-family: roboto condensed;
+  font-size: 14px;
+  text-transform:capitalize;
+  font-weight: 400;
+  color: #7b7a7a;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #4a4949;
+  transition: all 0.2s ease-in;
+}
+#sb  ul li:hover{
+  cursor: pointer;
+  background: #f5f5f5;
+}
+#nav {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  background: #000;
+}
+#nav .head {
+  position: relative;
+  padding-top: 16px;
+  margin-left: 15px;
+}
+
+#nav .head h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: 100;
+  letter-spacing: 2px;
+
+}
+#query,#db,#lq,#user,#cb{
+  position: relative;
+  padding-left: 260px;
+  padding-top: 10px;
+}
+
+#cb .card{
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin-top: 30px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#cb .card ul{
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+#cb .card .tabs{
+  position: relative;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom:3px;
+  background: #f5f5f5;
+  font-family: roboto condensed;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+#cb .card .tabs:hover{
+  background: #2196F3;
+}
+#cb .card .active .box{
+  position: relative;
+}
+
+#cb .card .inactive .box{
+  display: none;
+}
+
+#cb .card .box .wrap {
+  position: relative;
+  text-align: center;
+  padding: 5px;
+}
+#cb .card .box .wrap .date_picker {
+  position: relative;
+  width: 100%;
+  min-height: 30px;
+  outline: 0;
+  padding-left: 10px;
+  border: 1px solid #999;
+  font-family: roboto condensed;
+  font-size: 13px;
+  color: #555;
+
+}
+#cb .card .box .wrap h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  text-transform: capitalize;
+  padding-top: 5px;
+}
+#cb .card .box .wrap h4{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  font-weight: 700;
+  color: #666;
+  text-transform: capitalize;
+  padding-top: 15px;
+}
+
+#cb .card .box .wrap h4 span{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  font-weight: 400;
+  color:#000;
+  text-transform: capitalize;
+  padding-top: 5px;
+}
+#cb .card .box .wrap button{
+  position: relative;
+  background: 0;
+  border: 0;
+  font-family: roboto condensed;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 1px solid #000;
+  width: 120px;
+  height: 30px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: 0;
+  transition: all .2s ease-in;
+}
+
+#cb .card .box .wrap button:hover{
+  background:#000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#query .heading,#lq .heading ,#db .heading,#lp .heading,#user .heading,#cb .heading{
+  position: relative;
+  padding-top: 5px;
+}
+
+#query .heading h3, #lq .heading h3,#db .heading h3,#lp .heading h3,#user .heading h3,#cb .heading h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+}
+
+#query .heading p,#lq .heading p, #db .heading p,#lp .heading p,#user .heading p,#cb .heading p{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000;
+  text-transform: capitalize;
+}
+#query .card{
+  position: relative;
+  width: 100%;
+  padding:10px;
+  min-height: 500px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#lq .card{
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  min-height: 450px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#user .card{
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  min-height: 100px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#lq .card table, #user .card table{
+  position: relative;
+  width: 100%
+
+}
+#lq .card table tr,#user .card table tr{
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+#lq .card table tr th,#user .card table tr th{
+  position: relative;
+  background: #ccc;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  font-family: roboto condensed;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#lq .card table tr td,#user .card table tr td{
+  position: relative;
+  background: #f5f5f5;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left: 10px;
+  font-family: roboto condensed;
+  text-transform:capitalize;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+#lq .card table tr td  button,#user .card table tr td a button{
+  border: 0;
+  background: 0;
+  font-family: roboto condensed;
+  text-transform: uppercase;
+  font-size: 11px;
+  background: #ccc;
+
+}
+#lq .card table tr td  button:hover{
+  background: #999;
+}
+#query .head{
+  position: relative;
+}
+
+#query .head h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom:5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 2px;
+  text-transform: capitalize;
+}
+#query .wrap{
+  position: relative;
+  padding: 15px;
+}
+.input{
+  position: relative;
+  width: 100%;
+  padding: 3px;
+}
+.input label{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+
+}
+
+.input input, .input select, .input textarea{
+  min-height: 30px;
+  position: relative;
+  width: 100%;
+  outline: 0;
+  padding-left: 5px;
+  font-family: roboto condensed;
+  font-size: 13px;
+  font-weight: 500;
+
+}
+
+#query button{
+  position: relative;
+  background: 0;
+  border: 0;
+  font-family: roboto condensed;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 1px solid #000;
+  width: 120px;
+  height: 30px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: all .2s ease-in;
+}
+
+#query button:hover{
+  background:#000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+#login{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#login::after{
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background: #000000c4;
+}
+#login .card{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  background: #fff;
+  z-index: 1;
+  margin-top: 120px;
+  padding: 10px;
+  text-align: center;
+}
+#login .card h3{
+  position:relative;
+  font-family: open sans;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #555;
+  padding-top: 10px;
+}
+#login .card .input{
+  position: relative;
+  padding-top: 5px;
+}
+#login .card .input label{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+#login .card .input input{
+  position: relative;
+  width: 100%;
+  background: 0;
+  outline: 0;
+  min-height: 25px;
+  border: 1px solid #000;
+}
+#login .card .input button{
+  position: relative;
+  width: 120px;
+  height: 30px;
+  background: 0;
+  border: 0;
+  font-family: roboto condensed;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: 2px solid #000;
+  color: #000;
+  transition: all .2s ease-in;
+  margin-top: 10px;
+}
+#login .card .input button:hover{
+  background: #000;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+#login  .card h4
+{
+  position: relative;
+  margin:0;
+  font-family: roboto condensed;
+  font-size: 14px;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#db .wrap{
+  position: relative;
+  padding:10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+#db .wrap .card{
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  min-height: 200px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+}
+#db .wrap .card .head h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  color: #888;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+#db .wrap .card  h4{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 11.5px;
+  color: #777;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-top:6px;
+  padding-left: 20px;
+}
+#db .wrap .card  h5{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  color: #777;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-top:6px;
+  padding-left: 20px;
+}
+#db .wrap .card  h4::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background:#f44336;
+  top: 8px;
+  left: 7px;
+  animation-duration: 2s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  animation-name: noti;
+  border-radius: 50%;
+  animation-direction: alternate-reverse;
+}
+@keyframes noti{
+  from{
+    transform:scale(1);
+  }
+  to{
+    transform:scale(1.5);
+  }
+}
+
+#db .wrap .box{
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  min-height: 280px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+}
+.loading:before{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: none;
+  border-radius: 50%;
+  float: left;
+  border: 2px solid #ffb700;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  content: '';
+}
+.loading{
+  background: #f5f5f5;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.loading.deactive{
+  display: none;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+#pv{
+  position: relative;
+  padding-left: 260px;
+  padding-top: 10px;
+}
+#pv .heading{
+  position: relative;
+  padding-top: 10px;
+}
+#pv .heading h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}
+#pv .wrap{
+  position: relative;
+  padding:10px;
+}
+#pv .wrap.padding{
+  position: relative;
+  padding:10px;
+  padding-left: 0;
+}
+#pv .wrap .card{
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+}
+
+#pv .wrap .card .head{
+  position: relative;
+}
+
+#pv .wrap .card .head h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 13px;
+  text-transform:uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #555;
+}
+#pv .wrap .card .wrapper {
+  position: relative;
+  text-align: center;
+}
+#pv .wrap .card .wrapper .profile{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url('../img/avatar.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#pv .wrap .card .wrapper .text {
+  position: relative;
+  padding-top: 10px;
+
+}
+
+#pv .wrap .card .wrapper .text h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 2px;
+
+}
+#pv .wrap .card  .text h3 span{
+  color: #2196F3;
+}
+
+#pv .wrap .card .info{
+  position: relative;
+
+}
+
+#pv .wrap .card .info ul{
+  position: relative;
+  list-style: none;
+  padding: 0;
+  padding-left: 25px;
+  margin-top: 0px;
+}
+#pv .wrap .card .info ul li{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-weight: 400;
+  color: #000;
+  padding-top: 10px;
+}
+
+#pv .wrap .card .info ul li span{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #999;
+}
+
+#pv .wrap .card .info ul li  button{
+  position: relative;
+  border: 0;
+  font-family: roboto condensed;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #2196F3;
+  width: 90px;
+  height: 30px;
+  outline: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all .2s ease-in;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+}
+#pv .wrap .card .info ul li button:hover{
+  background: #555;
+  transform: translateY(-1px);
+}
+#pv .wrap .card .plus{
+  position: relative;
+  padding:20px;
+  background:0;
+  border-radius: 50%;
+  background: #2196F3;
+  border: 0;
+  outline: 0;
+  box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+}
+#pv .wrap .card .plus.red{
+  position: relative;
+  padding:20px;
+  background:0;
+  border-radius: 50%;
+  background: #F44336;
+  border: 0;
+  outline: 0;
+  box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+}
+#pv .wrap .card .plus.green{
+  position: relative;
+  padding:20px;
+  background:0;
+  border-radius: 50%;
+  background: #8BC34A;
+  border: 0;
+  outline: 0;
+  box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+}
+#pv .wrap .card .plus::after{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  left: 7px;
+}
+
+#pv .wrap .card .plus::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 2px;
+  background: #fff;
+  left: 20px;
+  top: 7px;
+}
+#pv .wrap .card .grid{
+  position: relative;
+  list-style: none;
+  top: -7px;
+}
+#pv .wrap .card .log{
+  position: relative;
+  list-style: none;
+}
+#pv .wrap .card .log .list{
+  position: relative;
+  font-family:open sans;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #777;
+    margin: 6px 0px;
+}
+
+#pv .wrap .card .log span{
+  position: relative;
+  font-family:open sans;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 600;
+    margin: 6px 0px;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+#pv .wrap .card .log .list::before{
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  top: 8px;
+  left: -20px;
+  background: green;
+}
+
+#pv .wrap .card .log .list.minus::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 8px;
+  left: -15px;
+  background: #f44336;
+}
+#pv .wrap .card .log .list.minus::after{
+  display: none;
+}
+#pv .wrap .card .log .list::after{
+  content: '';
+  position: absolute;
+  height: 14px;
+  width: 2px;
+  background: green;
+  left: -14px;
+  top: 2px;
+}
+
+#pv .wrap .card .grid::before{
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #555;
+  top: 3px;
+  bottom: 3px;
+  left: 21px;
+}
+
+#pv .wrap .card .grid .line{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #999;
+  margin: 6px 0px;
+}
+#pv .wrap .card .grid .line.deactive::before{
+  content:'';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
+  left: -25px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #2196f3;
+}
+
+#pv .wrap .card .grid .line.active::before{
+  content:'';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
+  left: -25px;
+  background: #00ff00;
+  border-radius: 50%;
+  border: 2px solid #2196f3;
+}
+
+#pv .wrap .card .active  .add{
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  width:100%;
+  height: 40px;
+  background: #f5f5f5;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: all .2s ease-in-out;
+}
+#pv .wrap .card .active .add input{
+  position: relative;
+  width: 100%;
+  border: 0;
+  padding-left: 8px;
+  outline: 0;
+  min-height: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-family: roboto condensed;
+  font-size: 13px;
+  color: #555;
+  text-transform: capitalize;
+}
+
+#pv .wrap .card .active .add .button{
+    position: relative;
+    border: 0;
+    font-family: roboto condensed;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #2196F3;
+    width: 100%;
+    height: 29px;
+    outline: 0;
+    letter-spacing: 2px;
+    transition: all .2s ease-in;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+    color: #fff;
+}
+#pv .wrap .card .active .add .button:hover{
+  position: relative;
+  background: #555;
+}
+#pv .wrap .card .active .add .button.red{
+    position: relative;
+    border: 0;
+    font-family: roboto condensed;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #F44336;
+    width: 100%;
+    height: 29px;
+    outline: 0;
+    letter-spacing: 2px;
+    transition: all .2s ease-in;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+    color: #fff;
+}
+
+#pv .wrap .card .active .add .button.green{
+    position: relative;
+    border: 0;
+    font-family: roboto condensed;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #8bc34a;
+    width: 100%;
+    height: 29px;
+    outline: 0;
+    letter-spacing: 2px;
+    transition: all .2s ease-in;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+    color: #fff;
+}
+#pv .wrap .card .active .add .button.green:hover{
+  position: relative;
+  background: #555;
+}
+#pv .wrap .card .active .add .button.red:hover{
+  position: relative;
+  background: #555;
+}
+#pv .wrap .card .inactive .add input{
+  display: none;
+}
+
+#pv .wrap .card .inactive .add button{
+  display: none;
+}
+
+#pv .wrap .card .inactive .add{
+
+}
+#thanks{
+  position: relative;
+}
+#thanks .card{
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+}
+#thanks .card h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #555;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+#thanks .card h4{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+.modal-header{
+  position: relative;
+}
+.flat_loading{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: 0;
+  display: none;
+}
+.flat_loading.active{
+  display: block;
+}
+.flat_loading::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #2196f3;
+  display: block;
+  animation-name: flat_load;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+@keyframes flat_load{
+  from{
+    left: 0;
+  }
+  to{
+    left: calc(100% - 100px);
+  }
+}
